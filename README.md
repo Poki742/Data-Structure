@@ -1,5 +1,5 @@
-# Linked-List
-Java Linked List<br>
+# Data Structure
+Java Data Structure<br>
 ## 1. 선형구조
 ### 연결 리스트(Linked List)
 - 연결 리스트는 자료들을 반드시 연속적으로 배열시키지는 않는다.<br>
