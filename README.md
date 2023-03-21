@@ -22,4 +22,4 @@ Java Data Structure<br>
 희소 행렬은 요소 중 많은 항들이0(영)으로 되어 있는 형태로 기억 장소를<br>절약하기 위해 링크드 리스트를 이용하여 저장한다.<br><br>
 ![image](https://user-images.githubusercontent.com/126844692/226500474-9a221ed7-d2a7-4afb-8c91-3c29ba89ae2a.png)<br>
 ### for문
-![image](https://user-images.githubusercontent.com/126844692/226507244-e13f07e0-b6af-465e-9507-16b31b61077b.png)<br>
+![image](https://user-images.githubusercontent.com/126844692/226522766-cade90b1-af43-4d8a-82e4-8ed5b7700de2.png)<br>
