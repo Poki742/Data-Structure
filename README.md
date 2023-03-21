@@ -11,7 +11,7 @@
 - 중간 노드 연결이 끊어지면 그 다음 노드를 찾지 못한다.<br>
 - 희소 행렬을 링크드 리스트로 표현하면 기억장소가 절약된다.<br>
 - 트리를 표현할 떄 가장 적합한 자료이다.<br>
-- ![image](https://user-images.githubusercontent.com/126844692/226499753-167c2edc-ce25-4c0f-b523-c93e2d697ade.png)<br>
+![image](https://user-images.githubusercontent.com/126844692/226499753-167c2edc-ce25-4c0f-b523-c93e2d697ade.png)<br>
 ### 노드(node)
 자료와 포인터를 갖고 있는 것을 노드(node)라고 한다.<br>
 
