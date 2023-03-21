@@ -18,5 +18,5 @@
 ![image](https://user-images.githubusercontent.com/126844692/226500264-3a170c34-f24b-4b3b-81d2-6519acaa5256.png)<br>
 
 ### 희소 행렬
-희소 행렬은 요소 중 많은 항들이0(영)으로 되어 있는 형태로 기억 장소를<br>절약하기 위해 링크드 리스트를 이용하여 저장한다.<br>
+희소 행렬은 요소 중 많은 항들이0(영)으로 되어 있는 형태로 기억 장소를<br>절약하기 위해 링크드 리스트를 이용하여 저장한다.<br><br>
 ![image](https://user-images.githubusercontent.com/126844692/226500474-9a221ed7-d2a7-4afb-8c91-3c29ba89ae2a.png)<br>
