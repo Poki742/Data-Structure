@@ -21,7 +21,7 @@ Java Data Structure<br>
 ### 희소 행렬
 희소 행렬은 요소 중 많은 항들이0(영)으로 되어 있는 형태로 기억 장소를<br>절약하기 위해 링크드 리스트를 이용하여 저장한다.<br><br>
 ![image](https://user-images.githubusercontent.com/126844692/226500474-9a221ed7-d2a7-4afb-8c91-3c29ba89ae2a.png)<br>
-### for문
+### 자바 이클립스(Java Eclipse)
 ![image](https://user-images.githubusercontent.com/126844692/226522766-cade90b1-af43-4d8a-82e4-8ed5b7700de2.png)<br>
 ### 큐(Queue)
 일상생활에서 은행에 들어온 순서대로 번호표를 뽑고 번호표 순서대로<br>
@@ -37,7 +37,7 @@ Java Data Structure<br>
 front 원소는 가장 먼저 큐에 들어온 첫 번째 원소이고, 리어 원소는 가장 늦게 들어온 마지막 원소입니다.<br>
 ![image](https://user-images.githubusercontent.com/126844692/226807680-b56779cd-ff8c-4f1f-af70-00d8c30bc6af.png)<br>
 
-### 자바 이클립스
+### 자바 이클립스(Java Eclipse)
 #### 큐 생성<br>
 ![image](https://user-images.githubusercontent.com/126844692/226807890-7ec895fa-73eb-45ec-acf5-68a22c8568e7.png)<br><br>
 
