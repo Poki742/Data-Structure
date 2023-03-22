@@ -23,3 +23,95 @@ Java Data Structure<br>
 ![image](https://user-images.githubusercontent.com/126844692/226500474-9a221ed7-d2a7-4afb-8c91-3c29ba89ae2a.png)<br>
 ### for문
 ![image](https://user-images.githubusercontent.com/126844692/226522766-cade90b1-af43-4d8a-82e4-8ed5b7700de2.png)<br>
+### 큐(Queue)
+일상생활에서 은행에 들어온 순서대로 번호표를 뽑고 번호표 순서대로<br>
+먼저 온 고객부터 처리해 주는 것과 같이 선입선출 형태의 구조<br><br>
+
+큐는 스택과 마찬가지로 삽입과 삭제의 위치와 방법이 제한되어 있는 자료구조이지만<br>
+한쪽 끝에서는 삽입 작업이 이루어지고 반대쪽 끝에서는 삭제 작업이 이루어지는 자료구조이다.<br>
+### 큐의 특징
+1) 데이터가 삽입된 순서대로 삭제되는 선입선출(FIFO, First-In-First-Out)  구조입니다.<br><br>
+2) 한쪽 끝을 front로 정하여 삭제 연산만 수행하도록 하고<br>
+다른 쪽 끝은 rear로 정하여 삽입 연산만 수행하도록 제한하여 만든 자료구조입니다.<br><br>
+
+front 원소는 가장 먼저 큐에 들어온 첫 번째 원소이고, 리어 원소는 가장 늦게 들어온 마지막 원소입니다.<br>
+![image](https://user-images.githubusercontent.com/126844692/226807680-b56779cd-ff8c-4f1f-af70-00d8c30bc6af.png)<br>
+
+### 자바 이클립스
+#### 큐 생성<br>
+![image](https://user-images.githubusercontent.com/126844692/226807890-7ec895fa-73eb-45ec-acf5-68a22c8568e7.png)<br><br>
+
+#### 공백 상태 검사
+![image](https://user-images.githubusercontent.com/126844692/226808078-ac1e9ea0-116c-4fa0-a03c-7288fff148cc.png)<br><br>
+
+#### 포화 상태 검사
+![image](https://user-images.githubusercontent.com/126844692/226808190-836d283a-fe19-414e-9118-917d55cfa715.png)<br><br>
+
+#### 삽입 연산(enQueue)
+![image](https://user-images.githubusercontent.com/126844692/226808319-831bfdef-8a16-42a1-982d-7af453520d40.png)<br><br>
+
+#### 삭제 연산(deQueue)
+![image](https://user-images.githubusercontent.com/126844692/226808407-7851acab-9fc1-44e5-a992-48d582871b3a.png)<br><br>
+
+#### 코딩
+
+package test;<br>
+
+public class IntQueue {<br>
+	private int[] que;<br>
+	private int capacity;<br>
+	private int front;<br>
+	private int rear;<br>
+	private int num;<br>
+	
+	public class EmptyIntQueueException extends RuntimeException {
+		public EmptyIntQueueException() {
+			
+		}
+	}
+	
+	public class OverflowIntQueueException extends RuntimeException {
+		public OverflowIntQueueException() {
+			
+		}
+	}
+	
+	public IntQueue(int maxlen) {
+		num = front = rear = 0;
+		capacity = maxlen;
+		try {
+			que = new int[capacity];
+		} catch (OutOfMemoryError e) {
+			capacity = 0;
+		}
+	}
+	
+	public int enque(int x) throws OverflowIntQueueException {
+		if(num >= capacity)
+			throw new OverflowIntQueueException();			// 큐가 가득 찼음
+		que[rear++] = x;
+		num++;
+		if(rear == capacity)
+			rear = 0;
+		return x;
+	}
+	
+	public int deque() throws EmptyIntQueueException {
+		if(num <= 0)
+			throw new EmptyIntQueueException();				//큐가 비어있음
+		int x = que[front++];
+		num--;
+		if(front == capacity)
+			front = 0;
+		return x;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+
+
+
