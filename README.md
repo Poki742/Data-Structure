@@ -109,7 +109,6 @@ public class IntQueue {<br>
 		// TODO Auto-generated method stub
 
 	}
-
 }
 
 
